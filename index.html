@@ -14,8 +14,9 @@
     <h1 class="text-center display-2">
       Alice Ryder
     </h1>
+
     <div class="row mt-3 align-items-center">
-      <section class="col-xl-8 col-md-6">
+      <section class="col-xl-8 col-md-6" id="about">
         <h2>About</h2>
         <p>
           Hi, I'm Alice. I've worked in QA and DevOps roles for the last few years.
@@ -30,8 +31,9 @@
           and I'm working on gaining frontend knowledge so I can make websites (you're on one now!)
         </p>
       </section>
+
       <div class="col">
-        <address class="card">
+        <address class="card" id="contact">
           <div class="card-body">
             <h2 class="card-title">Contact Me</h2>
             <ul>
@@ -49,99 +51,18 @@
       </div>
     </div>
 
-    <div class="container">
-      <h2>Work Experience</h2>
-      <section class="col col-md-9">
-        <h3>(Senior) DevOps Engineer - Trend Micro</h3>
-        <h4>January 2022 - January 2025</h4>
-        <p>
-          While my title in this role was technically Senior DevOps Engineer,
-          I don't feel like it accurately describes the role. Regardless,
-          here are some of my accomplishments:
-        </p>
-        <ul>
-          <li>
-            Designed and implemented an operations monitoring system for an AWS SaaS product using Terraform, Redshift,
-            Kinesis Firehose, AWS Lambdas, Cloudwatch metrics and events, SNS, and Grafana to ensure the operations team
-            could quickly respond to customer issues to ensure the 99.99% uptime SLA.
-          </li>
-          <li>
-            Performed cloud cost optimizations of up to 20% by identifying key issues using AWS cost explorer to
-            automate lifecycle rules for outdated EBS volumes and AMI images, as well as reducing networking costs by
-            using services such as VPC gateway endpoints for VPC services accessing S3 and DynamoDB.
-          </li>
-          <li>
-            Led migration of on-premise Jenkins deployment and testing pipelines to GitHub Actions, which greatly
-            reduced maintenance costs and security concerns for DevOps, Quality Assurance, and IT departments.
-          </li>
-          <li>
-            Implemented deployments of specialized testing infrastructure in AWS and Azure cloud environments using
-            Terraform, ARM templates, and CloudFormation to minimize spin-up and teardown times for CI and CR testing as
-            well as lowering cloud costs for idle cloud resources.
-          </li>
-        </ul>
-      </section>
-      <section class="col col-md-9">
-        <h3>QA Engineer - Trend Micro</h3>
-        <h4>June 2021 - December 2021</h4>
-        <p>
-          This was my first job out of college. I moved up very quickly to a devops role
-          because of my hard work on learning AWS and our in-house processes, and because of
-          my frequent communication across departments. This role focused on Python test
-          automation for Trend Micro's TippingPoint and Cloud One systems.
-        </p>
-        <ul>
-          <li>
-            Wrote automated Behavior Driven Development (BDD) tests using Python to test microservices in a cloud
-            environment, ensuring service reliability.
-          </li>
-          <li>
-            Handled testing of REST APIs using manual tests in TestRail and Postman.
-          </li>
-        </ul>
-      </section>
-      <section class="col col-md-9">
-        <h3>QA Student Contractor - NetApp</h3>
-        <h4>June 2018 - December 2020</h4>
-        <p>
-          As my primary internship/contract during university, I worked through a lot of growing
-          pains here as a new developer. There was also quite a lot of server room and
-          rack-and-stack work I had to do here (server and network setup). I worked primarily in
-          a small team for NetApp's E-Series SAN devices focused on solutions engineering.
-          Specifically "Cloud Connector" and a prototype container running on the SAN controller.
-        </p>
-        <ul>
-          <li>
-            Built a containerized disk monitoring system using InfluxDB, Telegraf and Grafana to detect and prevent
-            widespread hardware failures due to misconfiguration.
-          </li>
-          <li>
-            Led API and hardware testing for a cloud-integrated video archiving solution for surveillance systems.
-          </li>
-          <li>
-            Performed manual, UI, and API testing for an AWS S3-based storage backup solution.
-          </li>
-        </ul>
-      </section>
-      <section class="col col-md-9">
-        <h3>Student Sustaining Engineer - Integra Technologies</h3>
-        <h4>2017 - June 2018</h4>
-        <p>
-          This role was not particularly CS focused, but it did give me the opportunity to
-          get used to working in an office environment. Essentially it was mostly about
-          data entry into Excel spreadsheets and troubleshooting electronic failures with
-          experienced test engineers, but I also had the opportunity to develop data processing
-          scripts using Perl.
-        </p>
-        <ul>
-          <li>
-            Developed data processing scripts using Perl 5 to convert domain-specific log formats to Excel spreadsheets.
-          </li>
-        </ul>
-      </section>
-    </div>
+    <nav class="container" id="nav">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
 
-    <div class="container">
+    </nav>
+
+    <div class="container" id="skills">
       <section class="row">
         <h2>Technical Skills</h2>
         <p>I have used all of these tools at some point in my career.
@@ -262,7 +183,100 @@
         </div>
       </section>
     </div>
-    <div class="row">
+
+    <div class="container" id="experience">
+      <h2>Work Experience</h2>
+      <section class="col col-md-9">
+        <h3>(Senior) DevOps Engineer - Trend Micro</h3>
+        <h4>January 2022 - January 2025</h4>
+        <p>
+          While my title in this role was technically Senior DevOps Engineer,
+          I don't feel like it accurately describes the role. Regardless,
+          here are some of my accomplishments:
+        </p>
+        <ul>
+          <li>
+            Designed and implemented an operations monitoring system for an AWS SaaS product using Terraform, Redshift,
+            Kinesis Firehose, AWS Lambdas, Cloudwatch metrics and events, SNS, and Grafana to ensure the operations team
+            could quickly respond to customer issues to ensure the 99.99% uptime SLA.
+          </li>
+          <li>
+            Performed cloud cost optimizations of up to 20% by identifying key issues using AWS cost explorer to
+            automate lifecycle rules for outdated EBS volumes and AMI images, as well as reducing networking costs by
+            using services such as VPC gateway endpoints for VPC services accessing S3 and DynamoDB.
+          </li>
+          <li>
+            Led migration of on-premise Jenkins deployment and testing pipelines to GitHub Actions, which greatly
+            reduced maintenance costs and security concerns for DevOps, Quality Assurance, and IT departments.
+          </li>
+          <li>
+            Implemented deployments of specialized testing infrastructure in AWS and Azure cloud environments using
+            Terraform, ARM templates, and CloudFormation to minimize spin-up and teardown times for CI and CR testing as
+            well as lowering cloud costs for idle cloud resources.
+          </li>
+        </ul>
+      </section>
+      <section class="col col-md-9">
+        <h3>QA Engineer - Trend Micro</h3>
+        <h4>June 2021 - December 2021</h4>
+        <p>
+          This was my first job out of college. I moved up very quickly to a devops role
+          because of my hard work on learning AWS and our in-house processes, and because of
+          my frequent communication across departments. This role focused on Python test
+          automation for Trend Micro's TippingPoint and Cloud One systems.
+        </p>
+        <ul>
+          <li>
+            Wrote automated Behavior Driven Development (BDD) tests using Python to test microservices in a cloud
+            environment, ensuring service reliability.
+          </li>
+          <li>
+            Handled testing of REST APIs using manual tests in TestRail and Postman.
+          </li>
+        </ul>
+      </section>
+      <section class="col col-md-9">
+        <h3>QA Student Contractor - NetApp</h3>
+        <h4>June 2018 - December 2020</h4>
+        <p>
+          As my primary internship/contract during university, I worked through a lot of growing
+          pains here as a new developer. There was also quite a lot of server room and
+          rack-and-stack work I had to do here (server and network setup). I worked primarily in
+          a small team for NetApp's E-Series SAN devices focused on solutions engineering.
+          Specifically "Cloud Connector" and a prototype container running on the SAN controller.
+        </p>
+        <ul>
+          <li>
+            Built a containerized disk monitoring system using InfluxDB, Telegraf and Grafana to detect and prevent
+            widespread hardware failures due to misconfiguration.
+          </li>
+          <li>
+            Led API and hardware testing for a cloud-integrated video archiving solution for surveillance systems.
+          </li>
+          <li>
+            Performed manual, UI, and API testing for an AWS S3-based storage backup solution.
+          </li>
+        </ul>
+      </section>
+      <section class="col col-md-9">
+        <h3>Student Sustaining Engineer - Integra Technologies</h3>
+        <h4>2017 - June 2018</h4>
+        <p>
+          This role was not particularly CS focused, but it did give me the opportunity to
+          get used to working in an office environment. Essentially it was mostly about
+          data entry into Excel spreadsheets and troubleshooting electronic failures with
+          experienced test engineers, but I also had the opportunity to develop data processing
+          scripts using Perl.
+        </p>
+        <ul>
+          <li>
+            Developed data processing scripts using Perl 5 to convert domain-specific log formats to Excel spreadsheets.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="row" id="projects">
 
       <h2>Projects</h2>
 
